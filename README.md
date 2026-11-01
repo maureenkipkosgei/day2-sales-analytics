@@ -23,6 +23,7 @@ The data path is `../data/raw/electronics_sales.csv`, which is relative to the n
 A value is repaired only when it has one sensible meaning. Otherwise the row is skipped and listed with its sale id and reason, so finance can correct it at the source.
 
 | **Situation**               | **Decision**          | **Reason**                    |
+| :---:                       | :---:                 | :---:                         |
 | Spaces around a value       | Repair(strip)         | Cannot change the meaning     |
 | `KES 18999` (currency label,<br>any letter case)| Repair (remove KES)| The column is<br> in KES, so the label adds nothing|
 | `38,999` (comma separator)  | Repair (remove comma) | Commas appear as thousand <br>separators|
