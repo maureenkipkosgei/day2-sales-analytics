@@ -1,0 +1,44 @@
+========= Sales Report: September 2026 =========
+Rows read            : 50
+Rows used            : 47
+Rows skipped         : 3  (S-3030: Invalid unit price 'N/A, S-3035: Invalid quantity ', S-3039: Invalid unit price ')
+
+Total revenye (KES): 1,317,210.00
+
+Revenue by product (KES)
+  HP 15 Laptop           KES 389,994.00
+  Hisense 43in Smart TV  KES 272,993.00
+  Lenovo Tab M10         KES 199,992.00
+  Tecno Spark 20         KES 161,988.00
+  Infinix Hot 40         KES 63,996.00
+  Samsung Galaxy A15     KES 56,997.00
+  JBL Go 3 Speaker       KES 49,491.00
+  Anker Power Bank 20000 KES 38,691.00
+  Xiaomi Redmi Buds      KES 31,990.00
+  Oraimo FreePods        KES 19,593.00
+  USB-C Charger 25W      KES 19,487.00
+  Safaricom Neon Ray     KES 11,998.00
+
+Top 3 products
+ 1. HP 15 Laptop - KES 389,994.00
+ 2. Hisense 43in Smart TV - KES 272,993.00
+ 3. Lenovo Tab M10 - KES 199,992.00
+
+High-value transactions (>= KES 50,000): 5
+ S-3013 2026-09-08 Westgate           Lenovo Tab M10           KES 99,996.00
+ S-3017 2026-09-10 Kisumu Mega Plaza  Hisense 43in Smart TV    KES 155,996.00
+ S-3022 2026-09-13 Nairobi CBD        HP 15 Laptop             KES 259,996.00
+ S-3036 2026-09-21 Nakuru Westside    Tecno Spark 20           KES 53,996.00
+ S-3048 2026-09-30 Kisumu Mega Plaza  HP 15 Laptop             KES 129,998.00
+
+Transaction revenue statistics
+  mean     : 28,025.74
+  median   : 10,998.00
+  min      : 1,499.00
+  max      : 259,996.00
+
+=========== Pandas Verification ===========
+Total revenue           : MATCH(pure=1317210.00, pandas=1317210.00)
+Revenue by product      : MATCH
+Top 3                   : MATCH
+Mean / median           : MATCH (pure mean=28025.74, pandas mean=28025.74)
