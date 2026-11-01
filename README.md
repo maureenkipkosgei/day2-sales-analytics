@@ -39,6 +39,8 @@ Revenue for each row is quantity x unit price.
 Products are ranked with `sorted(..., key=lambda item:(-item[1], item[0]))`: highest revenue first, and equal revenue is ordered alphabetically by product name. There is no tie in this data, but the rule keeps the order stable if one appears.
 
 ### Results
+| **Analysis**               | **Value**           |
+| :---:                      | :---:               |
 | Rows read/used/skipped     |              50/47/3|
 | Total revenue              |     KES 1,317,210.00|
 | Mean transaction revenue   |            28,025.74|
